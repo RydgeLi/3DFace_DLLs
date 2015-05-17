@@ -1,0 +1,19 @@
+﻿Build started 2015/5/18 0:25:26.
+     1>Project "C:\Users\Rydge\Desktop\Identify_dll\Identify_dll\Identify_dll.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W1 /WX- /O2 /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt dllmain.cpp Identify_dll.cpp stdafx.cpp
+         dllmain.cpp
+         Identify_dll.cpp
+         stdafx.cpp
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Rydge\Desktop\Identify_dll\x64\Debug\Identify_dll.dll" /NOLOGO opencv_calib3d2411d.lib opencv_contrib2411d.lib opencv_core2411d.lib opencv_features2d2411d.lib opencv_flann2411d.lib opencv_gpu2411d.lib opencv_highgui2411d.lib opencv_imgproc2411d.lib opencv_legacy2411d.lib opencv_ml2411d.lib opencv_nonfree2411d.lib opencv_objdetect2411d.lib opencv_ocl2411d.lib opencv_photo2411d.lib opencv_stitching2411d.lib opencv_superres2411d.lib opencv_ts2411d.lib opencv_video2411d.lib opencv_videostab2411d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"dll.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"C:\Users\Rydge\Desktop\Identify_dll\x64\Debug\Identify_dll.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Rydge\Desktop\Identify_dll\x64\Debug\Identify_dll.lib" /MACHINE:X64 /DLL x64\Debug\dllmain.obj
+         x64\Debug\Identify_dll.obj
+         x64\Debug\stdafx.obj
+            Creating library C:\Users\Rydge\Desktop\Identify_dll\x64\Debug\Identify_dll.lib and object C:\Users\Rydge\Desktop\Identify_dll\x64\Debug\Identify_dll.exp
+         Identify_dll.vcxproj -> C:\Users\Rydge\Desktop\Identify_dll\x64\Debug\Identify_dll.dll
+     1>Done Building Project "C:\Users\Rydge\Desktop\Identify_dll\Identify_dll\Identify_dll.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.79
