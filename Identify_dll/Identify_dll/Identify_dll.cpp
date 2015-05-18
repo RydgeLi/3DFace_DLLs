@@ -65,7 +65,7 @@ void showRGB_temp(string imageName, string title)
 	}
 	imshow(title, img);
 	cvWaitKey(10);
-	cvDestroyWindow(title.c_str());
+	//cvDestroyWindow(title.c_str());
 }
 
 void getFiles(string path, vector<string>& files)
@@ -391,47 +391,43 @@ void Weight(vector<Point3D> &p)
 }
 extern "C" __declspec(dllexport) void identify_shu()
 {
-	string probe = "002_s1";
+	string alignedProbe = "D:\\BS\\shu_face\\aligned_probe\\aligned_probe.txt";
 	string canonical = "001_s1";
 	string rgbPath = "D:\\BS\\shu_face\\rgb";
-	string rgbProbe = rgbPath + "\\" + probe + ".bmp";
-	string path = "D:\\BS\\shu_face\\aligned\\" + canonical;
+	string alignedLibrary = "D:\\BS\\shu_face\\aligned\\" + canonical;
 	string depthResult;
 	string rgbResult;
 
-	vector<string> depthFiles, rgbFiles;
+	vector<string> alignedFiles, rgbFiles;
 	double distance_tmp, distance_min = 1000000;
 
-	getFiles(path, depthFiles);
+	getFiles(alignedLibrary, alignedFiles);
 	getFiles(rgbPath, rgbFiles);
 
-	int size = depthFiles.size();
+	int size = alignedFiles.size();
 
 	vector<Point3D> target;
-	string targetPath = path + "\\" + probe + " - " + canonical + ".txt";
-	shuReadPoint(targetPath.c_str(), target);
-	showRGB(rgbProbe, "probe Face");
+	shuReadPoint(alignedProbe.c_str(), target);
 	for (int i = 0; i < size; i++)
 	{
 		vector<Point3D> source;
-
-		shuReadPoint(depthFiles[i].c_str(), source);
-		cout << "源文件:	" << depthFiles[i].c_str() << endl;
+		shuReadPoint(alignedFiles[i].c_str(), source);
+		cout << "源文件:	" << alignedFiles[i].c_str() << endl;
 
 		distance_tmp = calculate(source, target);
 
 		if (distance_tmp < distance_min && distance_tmp > 0)
 		{
 			distance_min = distance_tmp;
-			depthResult = depthFiles[i];
+			depthResult = alignedFiles[i];
 			rgbResult = rgbFiles[i];
 		}
 
 		showRGB_temp(rgbFiles[i], "Searching...");
 	}
-	cout << "识别脸深度文件为：" << depthResult.c_str() << endl;
-	cout << "距离为：	" << distance_min << endl;
-	cout << "识别脸RGB文件为：" << rgbResult.c_str() << endl;
+	cout << "识别脸深度文件为:  " << depthResult.c_str() << endl;
+	cout << "最短距离为:  " << distance_min << endl;
+	cout << "识别脸RGB文件为:  " << rgbResult.c_str() << endl;
 	showRGB(rgbResult, "识别结果");
 };
 
