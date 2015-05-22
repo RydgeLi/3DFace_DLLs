@@ -84,8 +84,9 @@ void perform(string canonical)
 	}
 }
 
-extern "C" __declspec(dllexport) void perform_shu(string probe_face)
+extern "C" __declspec(dllexport) void perform_shu()
 {
+	string probe_face = "D:\\BS\\shu_face\\probe\\test.txt";
 	string canonical = "001_s1";
 	string cannonical_path = "D:\\BS\\shu_face\\depth_source\\" + canonical + ".txt";
 	string alignedPath = "D:\\BS\\shu_face\\aligned_probe\\aligned_probe.txt";

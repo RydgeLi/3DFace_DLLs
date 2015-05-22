@@ -1,6 +1,10 @@
-﻿Build started 2015/5/18 15:18:55.
-     1>Project "D:\BS\DLL\Identify_dll\Identify_dll\Identify_dll.vcxproj" on node 2 (Build target(s)).
+﻿Build started 2015/5/22 23:30:57.
+     1>Project "D:\BS\DLL\Identify_dll\Identify_dll\Identify_dll.vcxproj" on node 2 (Rebuild target(s)).
      1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D IDENTIFY_DLL_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\Identify_dll.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D IDENTIFY_DLL_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt dllmain.cpp
+         dllmain.cpp
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D IDENTIFY_DLL_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\Identify_dll.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Identify_dll.cpp
          Identify_dll.cpp
        Link:
@@ -9,8 +13,8 @@
          Debug\stdafx.obj
             Creating library D:\BS\DLL\Identify_dll\Debug\Identify_dll.lib and object D:\BS\DLL\Identify_dll\Debug\Identify_dll.exp
          Identify_dll.vcxproj -> D:\BS\DLL\Identify_dll\Debug\Identify_dll.dll
-     1>Done Building Project "D:\BS\DLL\Identify_dll\Identify_dll\Identify_dll.vcxproj" (Build target(s)).
+     1>Done Building Project "D:\BS\DLL\Identify_dll\Identify_dll\Identify_dll.vcxproj" (Rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:02.98
+Time Elapsed 00:00:02.63

@@ -1,6 +1,10 @@
-﻿Build started 2015/5/18 15:29:42.
-     1>Project "D:\BS\DLL\Registration_dll\Registration_dll\Registration_dll.vcxproj" on node 2 (Build target(s)).
+﻿Build started 2015/5/22 23:06:57.
+     1>Project "D:\BS\DLL\Registration_dll\Registration_dll\Registration_dll.vcxproj" on node 2 (Rebuild target(s)).
      1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D REGISTRATION_DLL_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\Registration_dll.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D REGISTRATION_DLL_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt dllmain.cpp
+         dllmain.cpp
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D REGISTRATION_DLL_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\Registration_dll.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Registration_dll.cpp
          Registration_dll.cpp
      1>d:\bs\dll\registration_dll\registration_dll\registration_dll.cpp(80): warning C4018: '<' : signed/unsigned mismatch
@@ -10,8 +14,8 @@
          Debug\stdafx.obj
             Creating library D:\BS\DLL\Registration_dll\Debug\Registration_dll.lib and object D:\BS\DLL\Registration_dll\Debug\Registration_dll.exp
          Registration_dll.vcxproj -> D:\BS\DLL\Registration_dll\Debug\Registration_dll.dll
-     1>Done Building Project "D:\BS\DLL\Registration_dll\Registration_dll\Registration_dll.vcxproj" (Build target(s)).
+     1>Done Building Project "D:\BS\DLL\Registration_dll\Registration_dll\Registration_dll.vcxproj" (Rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:02.77
+Time Elapsed 00:00:03.76

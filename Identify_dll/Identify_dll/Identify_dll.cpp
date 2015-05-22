@@ -406,12 +406,13 @@ extern "C" __declspec(dllexport) void identify_shu()
 
 	int size = alignedFiles.size();
 
-	vector<Point3D> target;
-	shuReadPoint(alignedProbe.c_str(), target);
+	vector<Point3D> source;
+	shuReadPoint(alignedProbe.c_str(), source);
+
 	for (int i = 0; i < size; i++)
 	{
-		vector<Point3D> source;
-		shuReadPoint(alignedFiles[i].c_str(), source);
+		vector<Point3D> target;
+		shuReadPoint(alignedFiles[i].c_str(), target);
 		cout << "源文件:	" << alignedFiles[i].c_str() << endl;
 
 		distance_tmp = calculate(source, target);
@@ -420,14 +421,22 @@ extern "C" __declspec(dllexport) void identify_shu()
 		{
 			distance_min = distance_tmp;
 			depthResult = alignedFiles[i];
-			rgbResult = rgbFiles[i];
+			rgbResult = rgbFiles[i].c_str();
 		}
 
 		showRGB_temp(rgbFiles[i], "Searching...");
 	}
 	cout << "识别脸深度文件为:  " << depthResult.c_str() << endl;
 	cout << "最短距离为:  " << distance_min << endl;
-	cout << "识别脸RGB文件为:  " << rgbResult.c_str() << endl;
+	cout << "识别脸RGB文件为:  " << rgbResult << endl;
 	showRGB(rgbResult, "识别结果");
+	string number = rgbResult.substr(19, 3);
+	string info_file = "D:\\BS\\shu_face\\source\\" + number + "\\info.txt";
+
+	string command;
+	command = "copy " + rgbResult + " " + "D:\\BS\\shu_face\\result\\rgb_result.bmp";
+	system(command.c_str());
+	command = "copy " + info_file + " " + "D:\\BS\\shu_face\\result\\info_result.txt";
+	system(command.c_str());
 };
 
